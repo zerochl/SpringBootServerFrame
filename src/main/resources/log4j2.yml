@@ -1,0 +1,58 @@
+Configuration:
+  status: warn
+
+  Properties: # 定义变量
+    Property:
+      - name: log.path
+        value: ../logs/BarrageServer/
+      - name: project.name
+        value: ${date:yyyy-MM-dd-HH-mm}
+
+  Appenders:
+    Console:  #输出到控制台
+      name: CONSOLE
+      target: SYSTEM_OUT
+      ThresholdFilter:
+        level: trace
+        onMatch: ACCEPT
+        onMismatch: DENY
+      PatternLayout:
+        pattern: "%highlight{%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36}.%M() @%L - %msg%n}{FATAL=Bright Red, ERROR=Bright Red, WARN=Bright Yellow, INFO=Bright White, DEBUG=Bright Cyan, TRACE=Bright White}"
+#        "%highlight{%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36}.%M() @%L - %msg%n}{FATAL=Bright Red, ERROR=Bright Magenta, WARN=Bright Yellow, INFO=Bright Green, DEBUG=Bright Cyan, TRACE=Bright White}"
+#%d{yyyy-MM-dd HH:mm:ss,SSS}:%4p %t (%F:%L) - %m%n
+    # 输出到文件，超过128MB归档
+    RollingFile:
+      - name: ROLLING_FILE
+        ignoreExceptions: false
+        fileName: ${log.path}/${project.name}.log
+        filePattern: "${log.path}/$${date:yyyy-MM}/${project.name}-%d{yyyy-MM-dd}-%i.log.gz"
+        PatternLayout:
+          pattern: "%d{yyyy-MM-dd HH:mm:ss,SSS}:%4p %t (%F:%L) - %m%n"
+        Policies:
+          SizeBasedTriggeringPolicy:
+            size: "64 MB"
+#          <!-- 每1天更新一次，此处查阅网上和官方示例中，都是以小时出现，我测试是以天为单位。（官方文档中说明按item类型是否是小时，但没找到在哪里设置item类型）另有其他各类型策略，请参阅官方文档 -->
+#          <!-- TimeBasedTriggeringPolicy需要和filePattern配套使用，由于filePattern配置的时间最小粒度是dd天，所以表示每一天新建一个文件保存日志。SizeBasedTriggeringPolicy表示当文件大小大于指定size时，生成新的文件保存日志。 -->
+          TimeBasedTriggeringPolicy:
+            modulate: true
+            interval: 1
+        DefaultRolloverStrategy:
+          max: 1000
+#          <Delete basePath="x:/xxxx" maxDepth="1">
+#                               <IfFileName glob="logs_*.log" />
+#                               <IfLastModified age="30d" />
+#                      </Delete>
+
+  Loggers:
+    Root:
+      level: info
+      AppenderRef:
+        - ref: CONSOLE
+        - ref: ROLLING_FILE
+    Logger: # 为com.xjj包配置特殊的Log级别，方便调试
+      - name: cn.tzmedia.barrageserver.message.base
+        additivity: false
+        level: debug
+        AppenderRef:
+          - ref: CONSOLE
+          - ref: ROLLING_FILE
