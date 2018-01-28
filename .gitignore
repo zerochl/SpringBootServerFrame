@@ -1,0 +1,9 @@
+/target
+/.idea
+/*.iml
+*.iml
+/out
+/springboot-auto-profile
+video.jar
+~*.docx
+logs/*
