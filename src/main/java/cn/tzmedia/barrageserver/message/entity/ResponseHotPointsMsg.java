@@ -4,8 +4,8 @@ import cn.tzmedia.barrageserver.common.constant.Constant;
 import cn.tzmedia.barrageserver.common.entity.servermsg.RequestHotPointListEntity;
 import cn.tzmedia.barrageserver.common.entity.servermsg.RequestNormalHotMsg;
 import cn.tzmedia.barrageserver.common.entity.servermsg.RequestPKHotMsg;
-import cn.tzmedia.barrageserver.server.model.HotCreatorTable;
-import cn.tzmedia.barrageserver.server.model.HotTotalTable;
+import cn.tzmedia.barrageserver.dbserver.model.HotCreatorTable;
+import cn.tzmedia.barrageserver.dbserver.model.HotTotalTable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

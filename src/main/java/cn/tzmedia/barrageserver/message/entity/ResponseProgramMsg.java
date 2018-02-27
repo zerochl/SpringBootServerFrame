@@ -1,12 +1,7 @@
 package cn.tzmedia.barrageserver.message.entity;
 
-import cn.tzmedia.barrageserver.server.model.RestImageEntity;
-import cn.tzmedia.barrageserver.server.model.ShopTable;
-import cn.tzmedia.barrageserver.server.model.ShowImageEntity;
 import lombok.Data;
 
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 /**

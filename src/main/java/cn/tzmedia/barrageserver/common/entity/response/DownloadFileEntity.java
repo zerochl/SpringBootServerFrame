@@ -1,8 +1,8 @@
 package cn.tzmedia.barrageserver.common.entity.response;
 
-import cn.tzmedia.barrageserver.server.model.AnimationFileEntity;
-import cn.tzmedia.barrageserver.server.model.RestImageEntity;
-import cn.tzmedia.barrageserver.server.model.ShowImageEntity;
+import cn.tzmedia.barrageserver.dbserver.model.AnimationFileEntity;
+import cn.tzmedia.barrageserver.dbserver.model.RestImageEntity;
+import cn.tzmedia.barrageserver.dbserver.model.ShowImageEntity;
 import lombok.Data;
 
 import java.io.Serializable;

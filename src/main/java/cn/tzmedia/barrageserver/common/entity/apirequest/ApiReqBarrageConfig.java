@@ -1,7 +1,7 @@
 package cn.tzmedia.barrageserver.common.entity.apirequest;
 
 import cn.tzmedia.barrageserver.common.constant.Constant;
-import cn.tzmedia.barrageserver.server.model.BarrageConfigTable;
+import cn.tzmedia.barrageserver.dbserver.model.BarrageConfigTable;
 import lombok.Data;
 
 import java.io.Serializable;

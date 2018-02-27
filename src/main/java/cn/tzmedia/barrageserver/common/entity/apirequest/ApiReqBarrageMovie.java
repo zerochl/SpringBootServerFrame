@@ -1,6 +1,6 @@
 package cn.tzmedia.barrageserver.common.entity.apirequest;
 
-import cn.tzmedia.barrageserver.server.model.BarrageMovieTable;
+import cn.tzmedia.barrageserver.dbserver.model.BarrageMovieTable;
 import lombok.Data;
 
 import java.io.Serializable;

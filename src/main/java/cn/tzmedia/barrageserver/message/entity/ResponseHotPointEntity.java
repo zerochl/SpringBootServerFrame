@@ -2,7 +2,7 @@ package cn.tzmedia.barrageserver.message.entity;
 
 import cn.tzmedia.barrageserver.common.entity.servermsg.RequestHotPointEntity;
 import cn.tzmedia.barrageserver.common.utils.UrlUtils;
-import cn.tzmedia.barrageserver.server.model.HotCreatorTable;
+import cn.tzmedia.barrageserver.dbserver.model.HotCreatorTable;
 import lombok.Data;
 
 /**

@@ -4,7 +4,7 @@ import cn.tzmedia.barrageserver.common.annotation.SerializedField;
 import cn.tzmedia.barrageserver.common.constant.ApiSupportConstant;
 import cn.tzmedia.barrageserver.common.entity.response.BaseResponseEntity;
 import cn.tzmedia.barrageserver.common.entity.servermsg.BaseRequestRootMsgEntity;
-import cn.tzmedia.barrageserver.server.service.NormalMsgService;
+import cn.tzmedia.barrageserver.dbserver.service.NormalMsgService;
 import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;

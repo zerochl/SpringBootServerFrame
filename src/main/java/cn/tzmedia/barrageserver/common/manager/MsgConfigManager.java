@@ -2,9 +2,8 @@ package cn.tzmedia.barrageserver.common.manager;
 
 import cn.tzmedia.barrageserver.common.constant.Constant;
 import cn.tzmedia.barrageserver.message.entity.*;
-import cn.tzmedia.barrageserver.server.model.BarrageConfigTable;
-import cn.tzmedia.barrageserver.server.service.BarrageConfigService;
-import com.alibaba.fastjson.JSONObject;
+import cn.tzmedia.barrageserver.dbserver.model.BarrageConfigTable;
+import cn.tzmedia.barrageserver.dbserver.service.BarrageConfigService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

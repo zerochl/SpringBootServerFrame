@@ -1,7 +1,7 @@
 package cn.tzmedia.barrageserver.message.entity;
 
-import cn.tzmedia.barrageserver.server.model.ArtistTable;
-import cn.tzmedia.barrageserver.server.model.TeamEntity;
+import cn.tzmedia.barrageserver.dbserver.model.ArtistTable;
+import cn.tzmedia.barrageserver.dbserver.model.TeamEntity;
 import lombok.Data;
 
 import java.util.ArrayList;

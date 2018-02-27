@@ -2,7 +2,6 @@ package cn.tzmedia.barrageserver.message.entity;
 
 import cn.tzmedia.barrageserver.common.entity.servermsg.RequestAwardMsg;
 import cn.tzmedia.barrageserver.common.utils.UrlUtils;
-import cn.tzmedia.barrageserver.server.model.AnimationTable;
 import com.alibaba.fastjson.annotation.JSONField;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

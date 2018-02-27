@@ -1,13 +1,9 @@
 package cn.tzmedia.barrageserver.dbwrite.queue;
 
 import cn.tzmedia.barrageserver.common.constant.Constant;
-import cn.tzmedia.barrageserver.common.manager.ExecutorManager;
 import cn.tzmedia.barrageserver.dbwrite.base.BaseDBWriteQueue;
 import cn.tzmedia.barrageserver.dbwrite.entity.BaseDBWriteEntity;
-import cn.tzmedia.barrageserver.server.service.BarrageDeviceService;
-import io.reactivex.Observable;
-import io.reactivex.ObservableOnSubscribe;
-import io.reactivex.schedulers.Schedulers;
+import cn.tzmedia.barrageserver.dbserver.service.BarrageDeviceService;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

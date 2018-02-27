@@ -1,7 +1,7 @@
 package cn.tzmedia.barrageserver.message.entity;
 
 import cn.tzmedia.barrageserver.common.utils.UrlUtils;
-import cn.tzmedia.barrageserver.server.model.ShowImageEntity;
+import cn.tzmedia.barrageserver.dbserver.model.ShowImageEntity;
 import lombok.Data;
 
 import java.io.Serializable;

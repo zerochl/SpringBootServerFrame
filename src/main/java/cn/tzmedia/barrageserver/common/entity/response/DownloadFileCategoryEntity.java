@@ -1,13 +1,11 @@
 package cn.tzmedia.barrageserver.common.entity.response;
 
-import cn.tzmedia.barrageserver.server.model.AnimationFileEntity;
-import cn.tzmedia.barrageserver.server.model.AnimationTable;
-import cn.tzmedia.barrageserver.server.model.RestImageEntity;
-import cn.tzmedia.barrageserver.server.model.ShowImageEntity;
+import cn.tzmedia.barrageserver.dbserver.model.AnimationFileEntity;
+import cn.tzmedia.barrageserver.dbserver.model.AnimationTable;
+import cn.tzmedia.barrageserver.dbserver.model.RestImageEntity;
+import cn.tzmedia.barrageserver.dbserver.model.ShowImageEntity;
 import lombok.Data;
 
-import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;

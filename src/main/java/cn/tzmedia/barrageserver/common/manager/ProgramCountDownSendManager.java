@@ -1,7 +1,7 @@
 package cn.tzmedia.barrageserver.common.manager;
 
-import cn.tzmedia.barrageserver.server.model.ActivityTable;
-import cn.tzmedia.barrageserver.server.service.ActivityService;
+import cn.tzmedia.barrageserver.dbserver.model.ActivityTable;
+import cn.tzmedia.barrageserver.dbserver.service.ActivityService;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

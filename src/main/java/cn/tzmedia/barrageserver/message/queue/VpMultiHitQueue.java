@@ -3,7 +3,7 @@ package cn.tzmedia.barrageserver.message.queue;
 import cn.tzmedia.barrageserver.common.constant.Constant;
 import cn.tzmedia.barrageserver.message.base.MessageQueue;
 import cn.tzmedia.barrageserver.message.entity.BaseResponseRootMsg;
-import cn.tzmedia.barrageserver.server.service.VPService;
+import cn.tzmedia.barrageserver.dbserver.service.VPService;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

@@ -1,6 +1,6 @@
 package cn.tzmedia.barrageserver.common.entity.servermsg;
 
-import cn.tzmedia.barrageserver.server.model.ShowHistoryTable;
+import cn.tzmedia.barrageserver.dbserver.model.ShowHistoryTable;
 import lombok.Data;
 
 /**

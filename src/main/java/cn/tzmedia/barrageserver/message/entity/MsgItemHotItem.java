@@ -1,6 +1,6 @@
 package cn.tzmedia.barrageserver.message.entity;
 
-import cn.tzmedia.barrageserver.server.model.HotTotalTable;
+import cn.tzmedia.barrageserver.dbserver.model.HotTotalTable;
 import lombok.Data;
 
 import java.io.Serializable;

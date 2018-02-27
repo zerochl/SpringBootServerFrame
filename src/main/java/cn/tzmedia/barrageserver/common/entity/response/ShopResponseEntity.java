@@ -1,11 +1,10 @@
 package cn.tzmedia.barrageserver.common.entity.response;
 
-import cn.tzmedia.barrageserver.server.model.RestImageEntity;
-import cn.tzmedia.barrageserver.server.model.ShopTable;
-import cn.tzmedia.barrageserver.server.model.ShowImageEntity;
+import cn.tzmedia.barrageserver.dbserver.model.RestImageEntity;
+import cn.tzmedia.barrageserver.dbserver.model.ShopTable;
+import cn.tzmedia.barrageserver.dbserver.model.ShowImageEntity;
 import lombok.Data;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**

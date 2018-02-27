@@ -1,9 +1,8 @@
 package cn.tzmedia.barrageserver.message.entity;
 
 import cn.tzmedia.barrageserver.common.utils.UrlUtils;
-import cn.tzmedia.barrageserver.server.model.ArtistTable;
+import cn.tzmedia.barrageserver.dbserver.model.ArtistTable;
 import lombok.Data;
-import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.util.List;
 
