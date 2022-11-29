@@ -1,7 +1,6 @@
-### 作者联系方式：QQ：975804495
 ### 疯狂的程序员群：186305789
-### 作者个人兴趣网站，[zerochl接码平台](https://xinghai.party)
-### 作者个人兴趣网站，[猿指](https://blog.xinghai.party)
+### 个人兴趣网站，[zerochl接码平台](https://xinghai.party)
+### 个人兴趣网站，[猿指](https://blog.xinghai.party)
 # Springboot Server端框架
 实现功能，主被动API请求、腾讯IM集成、API json接收与返回值加密、二维消息队列、数据库队列异步写入、redis注解与java代码缓存、mongodb注解与java代码查询、聚合查询、拦截器、log4f分割、延迟事件管理、多线程与线程池管理等等，基本符合一个正常后台服务该有的东西。
 # 涉及的第三方
